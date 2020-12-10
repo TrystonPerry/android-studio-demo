@@ -26,8 +26,8 @@ public class MyForegroundService extends Service {
         // Create notification for foreground service
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             Notification notification = new NotificationCompat.Builder(this, "FOREGROUND_SERVICE")
-                    .setContentTitle("My Background Service")
-                    .setContentText("This is a background service")
+                    .setContentTitle("CryptoAlarms Listener")
+                    .setContentText("Listening for new trading alarms")
                     .setSmallIcon(R.drawable.ic_android)
                     .build();
 

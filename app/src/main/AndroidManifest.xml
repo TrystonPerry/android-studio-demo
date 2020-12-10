@@ -33,7 +33,13 @@
         <!-- Services -->
         <service android:name=".MyForegroundService" />
 
-        <receiver android:name=".ForegroundServiceReceiver" android:exported="false" android:enabled="true">
+        <receiver
+            android:name=".ForegroundServiceReceiver"
+            android:directBootAware="true"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+        >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
