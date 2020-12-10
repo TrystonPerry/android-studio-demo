@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1068897996319",
+    "firebase_url": "https://cryptoalarms-38bea.firebaseio.com",
+    "project_id": "cryptoalarms-38bea",
+    "storage_bucket": "cryptoalarms-38bea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068897996319:android:7e8f7fe2f2a9260db20f2a",
+        "android_client_info": {
+          "package_name": "android.example.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068897996319-bh03bpgc4kukdh7555amruds8755qb1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgHTGrFsvz7fP0viqMjKdwpysuEvbeQlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068897996319-bh03bpgc4kukdh7555amruds8755qb1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068897996319:android:85b77757e874ea6cb20f2a",
+        "android_client_info": {
+          "package_name": "com.cryptoalarms.cryptoalarms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068897996319-bh03bpgc4kukdh7555amruds8755qb1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgHTGrFsvz7fP0viqMjKdwpysuEvbeQlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068897996319-bh03bpgc4kukdh7555amruds8755qb1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
