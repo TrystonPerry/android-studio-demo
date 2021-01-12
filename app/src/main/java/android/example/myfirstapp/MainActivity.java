@@ -68,28 +68,28 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = (Button) findViewById(R.id.button_service_toggle);
         button.setText("Start service");
-
-        FirebaseMessaging.getInstance().getToken()
-                .addOnCompleteListener(new OnCompleteListener<String>() {
-                    @Override
-                    public void onComplete(@NonNull Task<String> task) {
-                        if (!task.isSuccessful()) {
-                            Log.w("TEST", "Fetching FCM registration token failed", task.getException());
-                            return;
-                        }
-
-                        // Get new FCM registration token
-                        String token = task.getResult();
-
-                        // Log and toast
-                        Log.d("TEST", token);
-                        Toast.makeText(getApplicationContext(), token, Toast.LENGTH_SHORT).show();
-
-                        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                        ClipData clip = ClipData.newPlainText("User Token", token);
-                        clipboard.setPrimaryClip(clip);
-                    }
-                });
+//
+//        FirebaseMessaging.getInstance().getToken()
+//                .addOnCompleteListener(new OnCompleteListener<String>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<String> task) {
+//                        if (!task.isSuccessful()) {
+//                            Log.w("TEST", "Fetching FCM registration token failed", task.getException());
+//                            return;
+//                        }
+//
+//                        // Get new FCM registration token
+//                        String token = task.getResult();
+//
+//                        // Log and toast
+//                        Log.d("TEST", token);
+//                        Toast.makeText(getApplicationContext(), token, Toast.LENGTH_SHORT).show();
+//
+////                        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+////                        ClipData clip = ClipData.newPlainText("User Token", token);
+////                        clipboard.setPrimaryClip(clip);
+//                    }
+//                });
     }
 
     public void sendMessage(View view) {
@@ -169,6 +169,10 @@ public class MainActivity extends AppCompatActivity {
                     .setMessage(message)
                     .setPositiveButton(android.R.string.ok, null)
                     .show();
+
+            ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+            ClipData clip = ClipData.newPlainText("User Token", result.toString());
+            clipboard.setPrimaryClip(clip);
         }
     }
 }
